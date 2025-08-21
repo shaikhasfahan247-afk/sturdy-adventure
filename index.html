@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASF Clothes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <input type="text" placeholder="tv">
+            <span class="icon">&#128269;</span>
+        </div>
+        <div class="header-right">
+            <span class="icon">&#128247;</span>
+            <span class="icon">&#9776;</span>
+            <span class="icon notification" data-count="25"></span>
+        </div>
+    </header>
+
+    <!-- Category Bar -->
+    <nav class="category-bar">
+        <div class="category active">For You</div>
+        <div class="category">Fashion</div>
+        <div class="category">Mobiles</div>
+        <div class="category">Electronics</div>
+        <div class="category">Appliances</div>
+        <div class="category">Beauty</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/350x150?text=Electric+Scooter" alt="Scooter">
+                <div class="carousel-text">
+                    <h2>ic scooter</h2>
+                    <p>endless range</p>
+                    <p>Get up to ₹2,100 & Credit Card EMI Transactions</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/350x150?text=Android+Camera" alt="Camera">
+                <div class="carousel-text">
+                    <h2>Android with</h2>
+                    <p>Every shot has Explore now</p>
+                    <p>50 MP camera</p>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Still Looking Section -->
+    <section class="still-looking">
+        <h3>Still looking for these?</h3>
+        <div class="scroll-cards">
+            <div class="card" onclick="openModal('Men\'s Jeans','https://via.placeholder.com/100','₹999','High-quality men\'s jeans')">
+                <img src="https://via.placeholder.com/100" alt="Men's Jeans">
+                <p>Men's Jeans</p>
+                <button>View Store</button>
+            </div>
+            <div class="card" onclick="openModal('Men\'s Trousers','https://via.placeholder.com/100','₹799','Comfortable trousers')">
+                <img src="https://via.placeholder.com/100" alt="Men's Trousers">
+                <p>Men's Trousers</p>
+                <button>View Store</button>
+            </div>
+            <div class="card" onclick="openModal('Mobiles','https://via.placeholder.com/100','₹15,999','Latest Android mobile')">
+                <img src="https://via.placeholder.com/100" alt="Mobiles">
+                <p>Mobiles</p>
+                <button>View Store</button>
+            </div>
+            <div class="card" onclick="openModal('Men\'s Vests','https://via.placeholder.com/100','₹499','Soft cotton vest')">
+                <img src="https://via.placeholder.com/100" alt="Men's Vests">
+                <p>Men's Vests</p>
+                <button>View Store</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ads Section -->
+    <section class="ads">
+        <div class="ad-card" onclick="openModal('MIVI Headphones','https://via.placeholder.com/120','₹799','New launched headphones')">
+            <span class="ad-label">AD</span>
+            <img src="https://via.placeholder.com/120" alt="MIVI Headphones">
+            <p>New Launched</p>
+            <p>Spl. price ₹799</p>
+        </div>
+        <div class="ad-card" onclick="openModal('TRIGGR Headphones','https://via.placeholder.com/120','₹899','Dual pairing | ENC')">
+            <span class="ad-label">AD</span>
+            <img src="https://via.placeholder.com/120" alt="TRIGGR Headphones">
+            <p>Spl. price ₹899</p>
+            <p>Dual pairing | ENC</p>
+        </div>
+        <div class="ad-card" onclick="openModal('L\'OREAL Products','https://via.placeholder.com/120','₹499','Glycolic gloss')">
+            <span class="ad-label">AD</span>
+            <img src="https://via.placeholder.com/120" alt="L'OREAL Products">
+            <p>Shop now</p>
+            <p>Glycolic gloss</p>
+        </div>
+    </section>
+
+    <!-- Deal Zone -->
+    <section class="deal-zone">
+        <h3>Deal Zone</h3>
+        <div class="watch-shop">
+            <p>Watch & Shop <span class="live">LIVE</span></p>
+        </div>
+        <p>Ganesh Chaturthi</p>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-item active">Home</div>
+        <div class="bottom-item">Play</div>
+        <div class="bottom-item">Deal Zone</div>
+        <div class="bottom-item">Account</div>
+        <div class="bottom-item">Cart</div>
+    </nav>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Product Image">
+        <h3 id="modalName"></h3>
+        <p id="modalPrice"></p>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+</body>
+  </html>
